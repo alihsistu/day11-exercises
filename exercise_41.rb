@@ -3,9 +3,22 @@
 # The method should use the linear search algorithm to return an array of all the positions of the element where the target is found
 # You may not use any Array or Enum methods except length, size or empty?
 # You may not use any Enum derived iterations, only for, while or until
-
+# -------------------------------------
+# 1 
+# 2
+# ---------------------------------------
 # Write Your method code here
-
+def global_linear_search(array, target)
+    index = 0
+	while index < array.length
+		# this iterates throgh an array
+		if array[index] == target
+			return index
+		end
+		index+=1
+	end
+	return nil
+end
 # Driver Code: Do not edit under this line
 
 # check_solution runs a single test case and prints whether it was
@@ -25,7 +38,7 @@ end
 def run_tests()
     check_solution(1, "bananas".split(""), "a", [1,3,5])
     check_solution(2, "enumerables".split(""), "e", [0,4,9])
-    check_solution(3, "united states of america".split(""), [9, 17, 23]])
+    check_solution(3, "united states of america".split(""), "a", [9, 17, 23]])
 end
 
 # Execute the tests.

@@ -3,9 +3,23 @@
 # The method should return an array containing all of "peaks" of the array.
 # An element is considered a "peak" if it is greater than both it's left and right neighbour.
 # The first or last element of the array is considered a "peak" if it is greater than it's one neighbour
-
+# -----------------------------------
+# 1 make a loop for the array
+# 2 for each element compare it to the element to each sides
+# 3 if element is bigger than rigth
+# ------------------------------------
 # Write Your method code here
+def find_peaks(array)
 
+    for i in 1..array.length - 1
+        if i >  i-1 
+            next
+        elsif i > i
+            return i
+        end
+    end
+
+end
 # Driver Code: Do not edit under this line
 
 # check_solution runs a single test case and prints whether it was
